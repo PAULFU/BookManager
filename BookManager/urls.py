@@ -16,7 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 # from django.contrib import admin
 from BookManager.view import hello
+from BookManager.view import testdb
 
 urlpatterns = [
     url(r'^hello/', hello),
+    url('^testdb/', testdb)
 ]
+
